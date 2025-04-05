@@ -1,0 +1,15 @@
+apache-superset
+pandas
+numpy
+sqlalchemy
+requests
+flask
+flask-appbuilder
+jupyter
+pyodbc
+pymysql
+psycopg2-binary
+plotly
+dash
+pytest
+pytest-cov

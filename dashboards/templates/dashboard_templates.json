@@ -1,0 +1,60 @@
+{
+  "templates": [
+    {
+      "name": "Sales Dashboard",
+      "description": "A dashboard to visualize sales data over time.",
+      "layout": {
+        "rows": [
+          {
+            "columns": [
+              {
+                "width": 6,
+                "chart_id": "sales_over_time"
+              },
+              {
+                "width": 6,
+                "chart_id": "top_products"
+              }
+            ]
+          },
+          {
+            "columns": [
+              {
+                "width": 12,
+                "chart_id": "sales_by_region"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Marketing Performance",
+      "description": "A dashboard to track marketing campaign performance.",
+      "layout": {
+        "rows": [
+          {
+            "columns": [
+              {
+                "width": 6,
+                "chart_id": "campaign_roi"
+              },
+              {
+                "width": 6,
+                "chart_id": "leads_generated"
+              }
+            ]
+          },
+          {
+            "columns": [
+              {
+                "width": 12,
+                "chart_id": "conversion_rate"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

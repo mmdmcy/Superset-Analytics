@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  superset:
+    image: apache/superset:latest
+    container_name: superset
+    restart: always
+    ports:
+      - "8088:8088"
+    environment:
+      - SUPERSET_DATABASE_URI=sqlite:////app/superset/superset.db
+      - SUPERSET_SECRET_KEY=your_secret_key
+    volumes:
+      - superset_home:/app/superset
+    networks:
+      - superset_network
+
+volumes:
+  superset_home:
+
+networks:
+  superset_network:

@@ -1,0 +1,46 @@
+{
+  "charts": [
+    {
+      "chart_id": 1,
+      "chart_type": "bar",
+      "title": "Sales by Region",
+      "data_source": "sales_data",
+      "x_axis": "region",
+      "y_axis": "total_sales",
+      "filters": {
+        "date_range": "last_year"
+      },
+      "options": {
+        "color_scheme": "blue",
+        "show_legend": true
+      }
+    },
+    {
+      "chart_id": 2,
+      "chart_type": "line",
+      "title": "Monthly Active Users",
+      "data_source": "user_data",
+      "x_axis": "month",
+      "y_axis": "active_users",
+      "filters": {
+        "user_type": "registered"
+      },
+      "options": {
+        "line_style": "solid",
+        "show_grid": true
+      }
+    },
+    {
+      "chart_id": 3,
+      "chart_type": "pie",
+      "title": "Market Share by Product",
+      "data_source": "market_data",
+      "labels": "product_name",
+      "values": "market_share",
+      "options": {
+        "show_labels": true,
+        "label_position": "outside"
+      }
+    }
+  ]
+}

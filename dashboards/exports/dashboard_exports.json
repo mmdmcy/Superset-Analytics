@@ -1,0 +1,74 @@
+{
+  "dashboards": [
+    {
+      "id": 1,
+      "title": "Sales Overview",
+      "description": "Dashboard providing an overview of sales performance.",
+      "slices": [
+        {
+          "slice_id": 101,
+          "viz_type": "bar",
+          "datasource": "sales_data",
+          "metrics": ["total_sales", "average_order_value"],
+          "groupby": ["region"],
+          "time_range": "Last month"
+        },
+        {
+          "slice_id": 102,
+          "viz_type": "line",
+          "datasource": "sales_data",
+          "metrics": ["total_sales"],
+          "groupby": ["date"],
+          "time_range": "Last 30 days"
+        }
+      ],
+      "layout": {
+        "grid": [
+          {
+            "slice_id": 101,
+            "position": {"x": 0, "y": 0, "w": 6, "h": 4}
+          },
+          {
+            "slice_id": 102,
+            "position": {"x": 0, "y": 4, "w": 6, "h": 4}
+          }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "title": "Customer Insights",
+      "description": "Dashboard analyzing customer demographics and behavior.",
+      "slices": [
+        {
+          "slice_id": 201,
+          "viz_type": "pie",
+          "datasource": "customer_data",
+          "metrics": ["customer_count"],
+          "groupby": ["age_group"],
+          "time_range": "All time"
+        },
+        {
+          "slice_id": 202,
+          "viz_type": "table",
+          "datasource": "customer_data",
+          "metrics": ["customer_id", "purchase_count"],
+          "groupby": ["customer_name"],
+          "time_range": "Last year"
+        }
+      ],
+      "layout": {
+        "grid": [
+          {
+            "slice_id": 201,
+            "position": {"x": 0, "y": 0, "w": 6, "h": 4}
+          },
+          {
+            "slice_id": 202,
+            "position": {"x": 0, "y": 4, "w": 6, "h": 4}
+          }
+        ]
+      }
+    }
+  ]
+}
