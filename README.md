@@ -48,7 +48,7 @@ This project showcases data analytics capabilities using Apache Superset, focusi
 
 1. Clone the repository:
    ```
-   git clone <repository-url>
+   git clone https://github.com/mmdmcy/Superset-Analytics
    cd superset-analytics-project
    ```
 
